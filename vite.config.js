@@ -7,6 +7,11 @@ export default defineConfig(({ command }) => {
     mode: command === 'build' ? 'production' : 'development', // Явное указание режима
     base: './', // базовый путь для ресурсов в продакшне
     plugins: [react(), tailwindcss()],
+    server: {
+  host: true,
+  port: 5173
+},
+
     build: {
       outDir: 'dist', // Папка для сборки
       sourcemap: false, // Отключить source maps для продакшена (можно включить для отладки)
@@ -18,6 +23,7 @@ export default defineConfig(({ command }) => {
       target: 'es2015', // Целевая версия JS
       cssCodeSplit: true, // Разделять CSS на чанки
       emptyOutDir: true, // Очищать папку сборки перед новым билдом
+      
     },
   }
 })
