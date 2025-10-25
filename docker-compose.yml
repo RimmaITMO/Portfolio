@@ -20,7 +20,7 @@ services:
       - "5173:5173"
     depends_on:
       - mysql
-    command: node server.cjs
+    
 
     networks:
       - backend
