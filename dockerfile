@@ -17,5 +17,5 @@ COPY . .
 EXPOSE 5173
 
 # Стартуем dev-сервер Vite
-CMD ["npm", "run", "dev", "--", "--host", "node", "server.cjs"]
+CMD ["npm", "run", "dev", "node", "server.cjs"]
 
