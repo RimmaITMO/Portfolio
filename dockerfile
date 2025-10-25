@@ -20,5 +20,8 @@ EXPOSE 3001
 # Стартуем dev-сервер Vite
 CMD ["npm", "run", "dev", "--", "--host"]
 
-CMD ["node", "server.cjs"]
+COPY start.sh /app/start.sh
+RUN chmod +x /app/start.sh
+CMD ["/app/start.sh"]
+
 

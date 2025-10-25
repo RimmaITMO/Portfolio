@@ -21,6 +21,7 @@ services:
       - "3001:3001"
     depends_on:
       - mysql
+    command: npm run start-all
 
     networks:
       - backend
