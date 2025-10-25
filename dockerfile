@@ -15,6 +15,7 @@ COPY . .
 
 # Открываем порт Vite (5173 по умолчанию)
 EXPOSE 5173
+EXPOSE 3001
 
 # Стартуем dev-сервер Vite
 CMD ["npm", "run", "dev", "--", "--host"]
