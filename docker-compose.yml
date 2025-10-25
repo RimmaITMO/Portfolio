@@ -19,8 +19,7 @@ services:
       - "3000:3000"
       - "5173:5173"
     depends_on:
-      - mysql
-    command: node server.cjs
+      - mysqls
 
     
 
