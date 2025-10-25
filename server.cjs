@@ -5,6 +5,8 @@ const cors = require('cors');
 
 const app = express();
 
+const PORT = 3001; // порт для Node.js сервера
+
 app.use(cors()); 
 app.use(express.json());
 
