@@ -10,7 +10,7 @@ app.use(express.json());
 
 // Подключение к базе данных
 const pool = mysql.createPool({
-  host: 'localhost',
+  host: '127.0.0.1',
   user: 'root',
   password: 'password',
   database: 'test'
