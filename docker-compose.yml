@@ -4,7 +4,6 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: password
       MYSQL_DATABASE: test
-      MYSQL_DATABASE: mydb
       MYSQL_USER: user1
       MYSQL_PASSWORD: mypassword
     ports:
