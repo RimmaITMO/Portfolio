@@ -17,8 +17,7 @@ COPY . .
 EXPOSE 5173
 EXPOSE 3001
 
-# Стартуем dev-сервер Vite
-CMD ["npm", "run", "dev", "--", "--host"]
+
 
 COPY start.sh /app/start.sh
 RUN chmod +x /app/start.sh
