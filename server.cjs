@@ -12,10 +12,10 @@ app.use(express.json());
 
 // Подключение к базе данных
 const pool = mysql.createPool({
-  host: '127.0.0.1',
-  user: 'root',
-  password: 'password',
-  database: 'test'
+  host: process.env.DB_HOST || 'mysql', // имя сервиса из docker-compose
+  user: process.env.DB_USER || 'root',
+  password: process.env.DB_PASSWORD || 'password',
+  database: process.env.DB_NAME || 'test'
 });
 
 app.post('/api/contact', async (req, res) => {
